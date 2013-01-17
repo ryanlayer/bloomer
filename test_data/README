@@ -1,0 +1,10 @@
+# with errors
+~/src/wgsim/wgsim \
+	-e 0 -d 1 -s 1 -N 100 -1 50 -2 50 \
+	d1.fa d1e.1.fq d1e.2.fq
+
+# with no errors
+~/src/wgsim/wgsim \
+	-e 0 -d 1 -s 1 -N 100 -1 50 -2 50 \
+	-r 0 -R 0 -X 0 \
+	d1.fa d1.1.fq d1.2.fq
